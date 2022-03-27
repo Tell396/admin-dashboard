@@ -209,6 +209,81 @@ body {
         }
       }
     }
+
+    .cardBox {
+      position: relative;
+      width: 100%;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 4.1fr 4.1fr 4.1fr 4.1fr;
+      grid-gap: 30px;
+
+      .card {
+        position: relative;
+        background: $white;
+        padding: 30px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+
+        div {
+          .numbers {
+            position: relative;
+            font-weight: 500;
+            font-size: 2.5em;
+            color: $blue;
+          }
+
+          .cardName {
+            color: $black2;
+            font-size: 1.1em;
+            margin-top: 5px;
+          }
+        }
+
+        .iconBx {
+          font-size: 3.5em;
+          color: $black2;
+          ion-icon {
+          }
+        }
+      }
+
+      .card:hover {
+        background: $blue;
+
+        .cardName,
+        .iconBx,
+        .numbers {
+          color: $white;
+        }
+      }
+    }
+
+    .details {
+      position: relative;
+      width: 100%;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-gap: 30px;
+      margin-top: 10px;
+
+      .recentOrders {
+        position: relative;
+        display: grid;
+        min-height: 500px;
+        background: $white;
+
+        .cardHeader {
+        }
+
+        table {
+        }
+      }
+    }
   }
 
   .main.active {
